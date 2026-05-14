@@ -48,18 +48,18 @@ const PartnerMarquee = () => {
 const BeforeAfterGallery = () => {
   const transformations = [
     {
-      before: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=300&q=80',
-      after: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=300&q=80',
+      before: '/images/transformations/whitening-before.png',
+      after: '/images/transformations/whitening-after.png',
       treatment: 'Teeth Whitening',
     },
     {
-      before: 'https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=300&q=80',
-      after: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=300&q=80',
+      before: '/images/transformations/veneers-before.png',
+      after: '/images/transformations/veneers-after.png',
       treatment: 'Ceramic Veneers',
     },
     {
-      before: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=300&q=80',
-      after: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&q=80',
+      before: '/images/transformations/implants-before.png',
+      after: '/images/transformations/implants-after.png',
       treatment: 'Dental Implants',
     },
   ];
