@@ -6,7 +6,6 @@ import HeroSection from '../components/sections/HeroSection';
 import AboutPreview from '../components/sections/AboutPreview';
 import ServicesSection from '../components/sections/ServicesSection';
 import DoctorsSection from '../components/sliders/DoctorsSection';
-import TestimonialsSection from '../components/testimonials/TestimonialsSection';
 import WhyChooseUs from '../components/sections/WhyChooseUs';
 import FAQSection from '../components/sections/FAQSection';
 import AppointmentCTA from '../components/sections/AppointmentCTA';
@@ -168,7 +167,6 @@ const Home = () => {
       <BeforeAfterGallery />
       <WhyChooseUs />
       <DoctorsSection />
-      <TestimonialsSection />
       <FAQSection />
       <AppointmentCTA />
       <NewsletterSection />

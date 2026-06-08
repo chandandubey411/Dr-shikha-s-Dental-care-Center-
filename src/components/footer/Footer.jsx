@@ -43,14 +43,8 @@ const Footer = () => {
           
           {/* Brand Info */}
           <div className="flex flex-col">
-            <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded bg-dentora-primary flex items-center justify-center">
-                <span className="text-white text-xl">🦷</span>
-              </div>
-              <div>
-                <h3 className="font-poppins font-bold text-white text-lg leading-tight">Dr. Shikha's</h3>
-                <p className="text-dentora-secondary text-xs uppercase tracking-wider font-semibold">Dental Care Center</p>
-              </div>
+            <Link to="/" className="inline-block mb-6">
+              <img src="/images/logo.png" alt="Dr. Shikha's Dental Care Center Logo" className="h-16 w-auto drop-shadow-md" />
             </Link>
             <p className="text-sm leading-relaxed mb-6 text-slate-400">
               Premium dental care with compassion, expertise, and cutting-edge technology in Indirapuram, Ghaziabad.

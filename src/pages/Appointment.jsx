@@ -121,7 +121,7 @@ const Appointment = () => {
                   <div className="space-y-2 font-inter text-sm text-slate-600 dark:text-slate-400">
                     <div className="flex justify-between sm:justify-between gap-4"><span>Mon – Sat</span><span className="font-medium text-dentora-primary">10 AM – 2 PM</span></div>
                     <div className="flex justify-between sm:justify-between gap-4"><span>Mon – Sat</span><span className="font-medium text-dentora-primary">4 PM – 8 PM</span></div>
-                    <div className="flex justify-between sm:justify-between gap-4"><span>Sunday</span><span className="text-red-500 font-medium">Closed</span></div>
+                    <div className="flex justify-between sm:justify-between gap-4"><span>Sunday</span><span className="text-red-500 font-medium">On Call Appointment</span></div>
                   </div>
                 </div>
                 <div className="card-glass rounded-4xl p-5 sm:p-6 text-center sm:text-left">

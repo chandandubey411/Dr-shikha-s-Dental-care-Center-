@@ -51,21 +51,10 @@ const Navbar = () => {
       >
         <div className="container-custom flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <motion.div
-              whileHover={{ rotate: 10, scale: 1.1 }}
-              className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center shadow-glass"
-            >
-              <span className="text-white text-xl">🦷</span>
+          <Link to="/" className="flex items-center group">
+            <motion.div whileHover={{ scale: 1.05 }}>
+              <img src="/images/logo.png" alt="Dr. Shikha's Dental Care Center Logo" className="h-14 sm:h-16 w-auto drop-shadow-sm" />
             </motion.div>
-            <div>
-              <div className="font-poppins font-bold text-sm sm:text-base text-slate-900 dark:text-white leading-tight">
-                Dr. Shikha's
-              </div>
-              <div className="font-poppins text-[10px] sm:text-xs text-dentora-primary font-semibold leading-tight tracking-wide">
-                Dental Care Center
-              </div>
-            </div>
           </Link>
 
           {/* Desktop Nav */}

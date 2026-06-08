@@ -26,7 +26,7 @@ export const CLINIC = {
   days: "Monday – Saturday",
   timing1: "10:00 AM – 2:00 PM",
   timing2: "4:00 PM – 8:00 PM",
-  closed: "Sunday",
+  closed: "Sunday (On Call Appointment)",
 
   // Social
   practo: "https://www.practo.com/ghaziabad/clinic/dr-shikha-s-dental-care-centre-indirapuram-1",
@@ -61,18 +61,19 @@ export const TIME_SLOTS = [
 ];
 
 export const TREATMENT_TYPES = [
-  "Dental Checkup (General)",
-  "Teeth Cleaning & Scaling",
-  "Dental Fillings",
+  "Child Dentistry",
+  "Diagnosis & X-Ray",
+  "Scaling & Polishing (Teeth Cleaning)",
+  "Teeth Whitening (Bleaching)",
   "Root Canal Treatment",
-  "Teeth Whitening",
-  "Ceramic Veneers / Crowns",
+  "Crown and Bridges",
+  "Dentures",
+  "Braces Treatment (Orthodontic)",
+  "Fillings",
   "Dental Implants",
-  "Braces & Aligners",
-  "Pediatric Dentistry",
-  "Gum Treatment",
-  "Sedation Dentistry",
-  "Conservative Dentistry",
-  "Emergency Dental Care",
+  "Veneers/Laminate",
+  "Wisdom Tooth Extraction",
+  "Normal Extractions",
+  "Aligners/Invisalign",
   "Other",
 ];

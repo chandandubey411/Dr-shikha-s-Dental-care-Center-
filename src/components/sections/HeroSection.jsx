@@ -155,7 +155,7 @@ const HeroSection = () => {
         <div className="card-glass p-5 max-w-[220px] rounded-3xl shadow-float">
           <div className="flex items-center gap-3 mb-4">
             <img
-              src="/images/dr-shikha.png"
+              src="/images/dr-shikha.jpg"
               alt="Dr. Shikha Arora"
               className="w-12 h-12 rounded-2xl object-cover"
             />

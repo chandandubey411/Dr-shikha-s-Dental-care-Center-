@@ -4,6 +4,21 @@
 
 export const services = [
   {
+    id: 10,
+    slug: "pediatric-dentistry",
+    title: "Kids Dentistry",
+    shortTitle: "Kids Care",
+    icon: "👶",
+    color: "from-green-500 to-teal-400",
+    bgColor: "bg-green-50 dark:bg-green-900/20",
+    description: "Gentle, fun dental care for children in a warm, welcoming environment — building healthy habits for life.",
+    details: "Our kid-friendly dental approach makes visits fun and fear-free. We offer preventive treatments (fluoride, sealants), age-appropriate cleanings, and education on proper brushing techniques to set children on a lifelong path of dental health.",
+    image: "https://i.pinimg.com/736x/c2/bb/b0/c2bbb0fc1150cb7b35b50ce8c1c446de.jpg",
+    benefits: ["Child-friendly approach", "Preventive focus", "Fluoride treatments", "Fun & educational"],
+    duration: "30–45 min",
+    popular: true,
+  },
+  {
     id: 1,
     slug: "dental-checkup",
     title: "Dental Checkup",
@@ -138,21 +153,7 @@ export const services = [
     duration: "Varies",
     popular: false,
   },
-  {
-    id: 10,
-    slug: "pediatric-dentistry",
-    title: "Kids Dentistry",
-    shortTitle: "Kids Care",
-    icon: "👶",
-    color: "from-green-500 to-teal-400",
-    bgColor: "bg-green-50 dark:bg-green-900/20",
-    description: "Gentle, fun dental care for children in a warm, welcoming environment — building healthy habits for life.",
-    details: "Our kid-friendly dental approach makes visits fun and fear-free. We offer preventive treatments (fluoride, sealants), age-appropriate cleanings, and education on proper brushing techniques to set children on a lifelong path of dental health.",
-    image: "https://i.pinimg.com/736x/c2/bb/b0/c2bbb0fc1150cb7b35b50ce8c1c446de.jpg",
-    benefits: ["Child-friendly approach", "Preventive focus", "Fluoride treatments", "Fun & educational"],
-    duration: "30–45 min",
-    popular: false,
-  },
+
   {
     id: 11,
     slug: "emergency-dental-care",
@@ -185,4 +186,4 @@ export const services = [
   },
 ];
 
-export const featuredServices = services.filter(s => [1, 2, 3, 4, 5, 8].includes(s.id));
+export const featuredServices = services.filter(s => [10, 1, 2, 3, 4, 5].includes(s.id));

@@ -77,7 +77,7 @@ const About = () => {
             </motion.div>
             <motion.div variants={fadeRight} initial="hidden" whileInView="visible" viewport={viewportConfig} className="relative">
               <div className="img-zoom rounded-4xl overflow-hidden shadow-float">
-                <img src="/images/dr-shikha.png" alt="Dr. Shikha Arora" className="w-full h-96 object-cover object-top" loading="lazy" />
+                <img src="/images/dr-shikha.jpg" alt="Dr. Shikha Arora" className="w-full h-96 object-cover object-top" loading="lazy" />
               </div>
               <motion.div animate={{ y: [0, -12, 0] }} transition={{ duration: 5, repeat: Infinity }} className="absolute -bottom-6 -right-6 card-glass p-5 rounded-3xl shadow-float">
                 <div className="text-2xl font-poppins font-bold text-dentora-primary">4.9★</div>

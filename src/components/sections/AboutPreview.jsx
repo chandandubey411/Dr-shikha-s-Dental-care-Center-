@@ -93,7 +93,7 @@ const AboutPreview = () => {
               </div>
               <div className="img-zoom rounded-3xl overflow-hidden shadow-card">
                 <img
-                  src="/images/dr-shikha.png"
+                  src="/images/dr-shikha.jpg"
                   alt="Dr. Shikha Arora"
                   className="w-full h-36 object-cover"
                   loading="lazy"
