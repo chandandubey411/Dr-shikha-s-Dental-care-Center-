@@ -49,6 +49,7 @@ export const NAV_LINKS = [
   { label: "About", path: "/about" },
   { label: "Services", path: "/services" },
   { label: "Doctors", path: "/doctors" },
+  { label: "Gallery", path: "/gallery" },
   { label: "Blog", path: "/blog" },
   { label: "Contact", path: "/contact" },
 ];

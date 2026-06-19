@@ -89,6 +89,48 @@ const About = () => {
         </div>
       </section>
 
+      {/* Video Introduction */}
+      <section className="section-pad bg-gradient-to-br from-dentora-soft via-white to-dentora-light dark:from-slate-900 dark:via-slate-900 dark:to-slate-800 overflow-hidden">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={viewportConfig}
+            className="text-center mb-10"
+          >
+            <span className="section-tag">In Her Own Words</span>
+            <h2 className="font-poppins font-bold text-3xl md:text-4xl text-slate-900 dark:text-white mt-3">
+              A Message From <span className="gradient-text">Dr. Shikha</span>
+            </h2>
+            <p className="font-inter text-slate-600 dark:text-slate-400 mt-3 max-w-xl mx-auto">
+              Watch Dr. Shikha introduce herself and share her vision for compassionate, modern dental care.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={viewportConfig}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            className="relative max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-float border border-white/20"
+          >
+            {/* Decorative glow */}
+            <div className="pointer-events-none absolute -inset-1 rounded-3xl bg-gradient-to-r from-dentora-primary/30 to-dentora-teal/30 blur-xl z-0" />
+            <div className="relative z-10 rounded-3xl overflow-hidden bg-black">
+              <video
+                controls
+                preload="metadata"
+                className="w-full h-auto max-h-[520px] object-contain"
+                poster="/images/dr-shikha.jpg"
+              >
+                <source src="/images/personal_pics/VN20260613_130430.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Mission/Vision */}
       <section className="section-pad gradient-soft dark:bg-slate-900">
         <div className="container-custom">
