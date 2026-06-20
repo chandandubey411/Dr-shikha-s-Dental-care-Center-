@@ -85,7 +85,7 @@ const AboutPreview = () => {
             <div className="grid grid-cols-2 gap-4 mt-4">
               <div className="img-zoom rounded-3xl overflow-hidden shadow-card">
                 <img
-                  src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=300&q=80"
+                  src="/images/personal_pics_compressed/DSC04016.webp"
                   alt="Dental treatment"
                   className="w-full h-36 object-cover"
                   loading="lazy"
