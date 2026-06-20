@@ -4,26 +4,28 @@ import { Helmet } from 'react-helmet-async';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 /* ── Gallery Images ─────────────────────────────────────── */
+// thumb → compressed WebP (fast load in grid)
+// full  → original JPG (used only when lightbox opens)
 const galleryImages = [
-  { id: 1,  src: '/images/personal_pics/DSC03976.JPG', alt: 'Dr. Shikha Dental Clinic', category: 'Clinic' },
-  { id: 2,  src: '/images/personal_pics/DSC03979.JPG', alt: 'Dental Treatment',          category: 'Treatment' },
-  { id: 3,  src: '/images/personal_pics/DSC03980.JPG', alt: 'Clinic Interior',            category: 'Clinic' },
-  { id: 4,  src: '/images/personal_pics/DSC03981.JPG', alt: 'Dental Care',                category: 'Treatment' },
-  { id: 5,  src: '/images/personal_pics/DSC03982.JPG', alt: 'Patient Care',               category: 'Patient' },
-  { id: 6,  src: '/images/personal_pics/DSC03985.JPG', alt: 'Clinic Setup',               category: 'Clinic' },
-  { id: 7,  src: '/images/personal_pics/DSC03989.JPG', alt: 'Dental Equipment',           category: 'Equipment' },
-  { id: 8,  src: '/images/personal_pics/DSC03991.JPG', alt: 'Treatment Session',          category: 'Treatment' },
-  { id: 9,  src: '/images/personal_pics/DSC04006.JPG', alt: 'Dental Consultation',        category: 'Patient' },
-  { id: 10, src: '/images/personal_pics/DSC04007.JPG', alt: 'Modern Dental Chair',        category: 'Equipment' },
-  { id: 11, src: '/images/personal_pics/DSC04013.JPG', alt: 'Patient Smile',              category: 'Patient' },
-  { id: 12, src: '/images/personal_pics/DSC04014.JPG', alt: 'Clinic Environment',         category: 'Clinic' },
-  { id: 13, src: '/images/personal_pics/DSC04016.JPG', alt: 'Dental Tools',               category: 'Equipment' },
-  { id: 14, src: '/images/personal_pics/DSC04017.JPG', alt: 'Patient Consultation',       category: 'Patient' },
-  { id: 15, src: '/images/personal_pics/DSC04019.JPG', alt: 'Dental Care Center',         category: 'Clinic' },
-  { id: 16, src: '/images/personal_pics/DSC04020.JPG', alt: 'Treatment Room',             category: 'Treatment' },
-  { id: 17, src: '/images/personal_pics/DSC04021.JPG', alt: 'Dental Checkup',             category: 'Treatment' },
-  { id: 18, src: '/images/personal_pics/DSC04022.JPG', alt: 'Clinic Facility',            category: 'Clinic' },
-  { id: 19, src: '/images/personal_pics/DSC04023.JPG', alt: 'Dr. Shikha Clinic Gallery',  category: 'Clinic' },
+  { id: 1,  thumb: '/images/personal_pics_compressed/DSC03976.webp', full: '/images/personal_pics/DSC03976.JPG', alt: 'Dr. Shikha Dental Clinic', category: 'Clinic' },
+  { id: 2,  thumb: '/images/personal_pics_compressed/DSC03979.webp', full: '/images/personal_pics/DSC03979.JPG', alt: 'Dental Treatment',          category: 'Treatment' },
+  { id: 3,  thumb: '/images/personal_pics_compressed/DSC03980.webp', full: '/images/personal_pics/DSC03980.JPG', alt: 'Clinic Interior',            category: 'Clinic' },
+  { id: 4,  thumb: '/images/personal_pics_compressed/DSC03981.webp', full: '/images/personal_pics/DSC03981.JPG', alt: 'Dental Care',                category: 'Treatment' },
+  { id: 5,  thumb: '/images/personal_pics_compressed/DSC03982.webp', full: '/images/personal_pics/DSC03982.JPG', alt: 'Patient Care',               category: 'Patient' },
+  { id: 6,  thumb: '/images/personal_pics_compressed/DSC03985.webp', full: '/images/personal_pics/DSC03985.JPG', alt: 'Clinic Setup',               category: 'Clinic' },
+  { id: 7,  thumb: '/images/personal_pics_compressed/DSC03989.webp', full: '/images/personal_pics/DSC03989.JPG', alt: 'Dental Equipment',           category: 'Equipment' },
+  { id: 8,  thumb: '/images/personal_pics_compressed/DSC03991.webp', full: '/images/personal_pics/DSC03991.JPG', alt: 'Treatment Session',          category: 'Treatment' },
+  { id: 9,  thumb: '/images/personal_pics_compressed/DSC04006.webp', full: '/images/personal_pics/DSC04006.JPG', alt: 'Dental Consultation',        category: 'Patient' },
+  { id: 10, thumb: '/images/personal_pics_compressed/DSC04007.webp', full: '/images/personal_pics/DSC04007.JPG', alt: 'Modern Dental Chair',        category: 'Equipment' },
+  { id: 11, thumb: '/images/personal_pics_compressed/DSC04013.webp', full: '/images/personal_pics/DSC04013.JPG', alt: 'Patient Smile',              category: 'Patient' },
+  { id: 12, thumb: '/images/personal_pics_compressed/DSC04014.webp', full: '/images/personal_pics/DSC04014.JPG', alt: 'Clinic Environment',         category: 'Clinic' },
+  { id: 13, thumb: '/images/personal_pics_compressed/DSC04016.webp', full: '/images/personal_pics/DSC04016.JPG', alt: 'Dental Tools',               category: 'Equipment' },
+  { id: 14, thumb: '/images/personal_pics_compressed/DSC04017.webp', full: '/images/personal_pics/DSC04017.JPG', alt: 'Patient Consultation',       category: 'Patient' },
+  { id: 15, thumb: '/images/personal_pics_compressed/DSC04019.webp', full: '/images/personal_pics/DSC04019.JPG', alt: 'Dental Care Center',         category: 'Clinic' },
+  { id: 16, thumb: '/images/personal_pics_compressed/DSC04020.webp', full: '/images/personal_pics/DSC04020.JPG', alt: 'Treatment Room',             category: 'Treatment' },
+  { id: 17, thumb: '/images/personal_pics_compressed/DSC04021.webp', full: '/images/personal_pics/DSC04021.JPG', alt: 'Dental Checkup',             category: 'Treatment' },
+  { id: 18, thumb: '/images/personal_pics_compressed/DSC04022.webp', full: '/images/personal_pics/DSC04022.JPG', alt: 'Clinic Facility',            category: 'Clinic' },
+  { id: 19, thumb: '/images/personal_pics_compressed/DSC04023.webp', full: '/images/personal_pics/DSC04023.JPG', alt: 'Dr. Shikha Clinic Gallery',  category: 'Clinic' },
 ];
 
 
@@ -58,7 +60,7 @@ const Lightbox = ({ images, index, onClose, onPrev, onNext }) => {
         <ChevronLeft size={22} />
       </button>
 
-      {/* Image */}
+      {/* Image — full quality original for lightbox */}
       <motion.div
         key={index}
         initial={{ scale: 0.88, opacity: 0 }}
@@ -68,8 +70,9 @@ const Lightbox = ({ images, index, onClose, onPrev, onNext }) => {
         className="relative max-w-5xl w-full max-h-[85vh]"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Show thumb instantly, then swap to full when loaded */}
         <img
-          src={img.src}
+          src={img.full}
           alt={img.alt}
           className="w-full max-h-[80vh] object-contain rounded-2xl shadow-2xl"
         />
@@ -172,10 +175,12 @@ const Gallery = () => {
                   onClick={() => openLightbox(idx)}
                 >
                   <div className="img-zoom">
+                    {/* Compressed WebP thumbnail — loads fast in grid */}
                     <img
-                      src={img.src}
+                      src={img.thumb}
                       alt={img.alt}
                       loading="lazy"
+                      decoding="async"
                       className="w-full h-auto block object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>

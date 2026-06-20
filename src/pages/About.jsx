@@ -122,8 +122,9 @@ const About = () => {
                 preload="metadata"
                 className="w-full h-auto max-h-[520px] object-contain"
                 poster="/images/dr-shikha.jpg"
+                playsInline
               >
-                <source src="/images/personal_pics/VN20260613_130430.mp4" type="video/mp4" />
+                <source src="/videos/dr-shikha-intro.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
