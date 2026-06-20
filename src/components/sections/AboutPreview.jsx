@@ -75,7 +75,7 @@ const AboutPreview = () => {
             {/* Main image */}
             <div className="img-zoom rounded-4xl overflow-hidden shadow-float">
               <img
-                src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80"
+                src="/images/personal_pics_compressed/DSC03980.webp"
                 alt="Dr. Shikha's Dental Clinic interior"
                 className="w-full h-72 object-cover"
                 loading="lazy"
